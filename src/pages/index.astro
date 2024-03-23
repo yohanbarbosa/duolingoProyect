@@ -2,55 +2,44 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 
-const flags= [
-	{flag:'',name : 'ingles'},
-	{flag:'',name : 'español'},
-	{flag:'',name : 'portugues'},
-	{flag:'',name : 'frances'}
-	];
+const flags  =[
+	{ 
+	flag:'',
+ 	name:'bandera 1'
+	},
+	{ 
+	flag:'<Icon name="flagpack:es" />',
+ 	name:'bandera 2'
+	},
+	{ 
+	flag:'',
+ 	name:'bandera 3'
+	}
+	
+	]
 ---
 
-<Layout title="Welcome">
+<Layout title="Duolingo Clone ">
+	<!-- !Este es el contenido de la pagina  -->
 	<div class="container">
-		<div class="banner">
-			banner
-		</div>
-		<div class="langs">
-			{
-				flags.map((flag) => 
+      <div class="banner">
+		banner
+	  </div>
+	   <div class="langs">
+		{
+			flags.map((flag)=> 
+				
 				<a href="#">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="m14.303 6-3-2H6V2H4v20h2v-8h4.697l3 2H20V6z"></path></svg>
+					
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(219, 2, 2);transform: ;msFilter:;"><path d="m14.303 6-3-2H6V2H4v20h2v-8h4.697l3 2H20V6z"></path></svg>
 				{flag.name}
 			</a>
+			
 			)
-			}
+		}
+		
 
-		</div>
+	   </div>
 	</div>
 </Layout>
 
-<style>
-	.langs{
-		height: 46px;
-		display: flex;
-
-		& a{
-			display: flex;
-			align-items: center;
-			padding: 0 8px;
-			height: 100%;
-			background: purple;
-			text-decoration: none;
-			color: #fff;
-		}
-		& a:hover{
-			background: green;
-			transition: background 300ms ease-in-out;
-		}
-	}
-
-	.banner{
-		height: 300px;
-
-	}
-</style>
