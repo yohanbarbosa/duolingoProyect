@@ -19,14 +19,122 @@ import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
       <header class="h-16 flex  items-center">
 		 <div class="container flex flex-row items-center justify-between max-w-[1200px] mx-32">
 				<img src="/duolingo-logo.svg" alt="">
-				<a class=" relative group flex flex-row items-center hover:text-[#b9b7b7] text-gray-400 font-roboto font-semibold uppercase" href="#">
-					Idioma de la Pagina:
-					<Icon name="mdi:chevron-down" />
-					 <div class=" absolute top-6 hidden group-hover:block bg-[#ccc] ">
-						<Icon name="flagpack:sa" />
-						<Icon name="flagpack:cz" />
-						<Icon name="flagpack:br" />
-						<Icon name="flagpack:es" />
+				<div class="relative group flex flex-row items-center hover:text-[#b9b7b7] text-[#AFAFAF] font-roboto font-semibold uppercase">
+					<a href="#" class="relative">Idioma de la Pagina: </a>
+					<Icon name="mdi:chevron-down" size={28} />
+					<div class="absolute top-8 right-1 hidden group-hover:block p-4 border-2 border-[#d8d8d8] w-96 rounded-lg bg-white">
+						
+						<div class="my-2">
+							
+							<ul class="grid grid-cols-2 gap-4 text-xs text-[#777]">
+								<li>
+									<a href="#" class="flex items-center ml-5">
+										<Icon name="flagpack:sa" size={25}/><span class="ml-4">العربية</span></a>
+								</li>
+								<li>
+									<a href="#"class="flex items-center ml-5">
+										<Icon name="flagpack:in" size={25}/><span class="ml-4">বাংলা</span></a>
+								</li>
+								<li>
+									<a href="#" class="flex items-center ml-5" >
+										<Icon name="flagpack:cz"size={25}/><span class="ml-4">Čeština</span></a>
+								</li>
+								<li>
+									<a href="#"class="flex items-center ml-5">
+										<Icon name="flagpack:de" size={25}/><span class="ml-4">Deutsch</span></a>
+								</li>
+								<li >
+									<a href="#" class="flex items-center ml-5" >
+										<Icon name="flagpack:gr" size={25}/><span class="ml-4">Ελληνικά</span></a>
+								</li>
+								<li>
+									<a href="#"class="flex items-center ml-5">
+										<Icon name="flagpack:us" size={25}/><span class="ml-4">English</span></a>
+								</li>
+								<li>
+									<a href="#" class="flex items-center ml-5" >
+										<Icon name="flagpack:es" size={25}/><span class="ml-4">español</span></a>
+								</li>
+								<li>
+									<a href="#"class="flex items-center ml-5">
+										<Icon name="flagpack:fr" size={25}/><span class="ml-4">Français</span></a>
+								</li>
+								<li>
+									<a href="#"class="flex items-center ml-5">
+										<Icon name="flagpack:in" size={25}/><span class="ml-4">हिंदी</span></a>
+								</li>
+								<li>
+									<a href="#"class="flex items-center ml-5">
+										<Icon name="flagpack:hu" size={25}/><span class="ml-4">Magyar</span></a>
+								</li>
+								<li>
+									<a href="#"class="flex items-center ml-5">
+										<Icon name="flagpack:id" size={25}/><span class="ml-4">Bahasa Indonesia</span></a>
+								</li>
+								<li>
+									<a href="#"class="flex items-center ml-5">
+										<Icon name="flagpack:it" size={25}/><span class="ml-4">Italiano</span></a>
+								</li>
+								<li>
+									<a href="#"class="flex items-center ml-5">
+										<Icon name="flagpack:jp" size={25}/><span class="ml-4">日本語</span></a>
+								</li>
+								<li>
+									<a href="#"class="flex items-center ml-5">
+										<Icon name="flagpack:kr" size={25}/><span class="ml-4">한국어</span></a>
+								</li>
+								<li>
+									<a href="#"class="flex items-center ml-5">
+										<Icon name="flagpack:nl" size={25}/><span class="ml-4">Nederlands</span></a>
+								</li>									
+								<li>
+									<a href="#"class="flex items-center ml-5">
+										<Icon name="flagpack:pl" size={25}/><span class="ml-4">Polski</span></a>
+								</li>									
+
+								<li>
+									<a href="#"class="flex items-center ml-5">
+										<Icon name="flagpack:br" size={25}/><span class="ml-4">Português</span></a>
+								</li>
+								<li>
+									<a href="#"class="flex items-center ml-5">
+										<Icon name="flagpack:ro" size={25}/><span class="ml-4">Română</span></a>
+								</li>
+								<li>
+									<a href="#"class="flex items-center ml-5">
+										<Icon name="flagpack:ru" size={25}/><span class="ml-4">Русский</span></a>
+								</li>
+								<li>
+									<a href="#"class="flex items-center ml-5">
+										<Icon name="flagpack:in" size={25}/><span class="ml-4">తెలుగు</span></a>
+								</li>
+								<li>
+									<a href="#"class="flex items-center ml-5">
+										<Icon name="flagpack:th" size={25}/><span class="ml-4">ภาษาไทย</span></a>
+								</li>
+								<li>
+									<a href="#"class="flex items-center ml-5">
+										<Icon name="flagpack:ph" size={25}/><span class="ml-4">Tagalog</span></a>
+								</li>
+								<li>
+									<a href="#"class="flex items-center ml-5">
+										<Icon name="flagpack:tr" size={25}/><span class="ml-4">Türkçe</span></a>
+								</li>
+								<li>
+									<a href="#"class="flex items-center ml-5">
+										<Icon name="flagpack:ua" size={25}/><span class="ml-4">Українською</span></a>
+								</li>
+								<li>
+									<a href="#"class="flex items-center ml-5">
+										<Icon name="flagpack:vn" size={25}/><span class="ml-4">Tiếng Việt</span></a>
+								</li>
+								<li>
+									<a href="#"class="flex items-center ml-5">
+										<Icon name="flagpack:cn" size={25}/><span class="ml-4">中文</span></a>
+								</li>
+							</ul>
+						</div>
+					
 					 </div>
 
 				</a>
