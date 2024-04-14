@@ -3,41 +3,9 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import { Icon } from "astro-icon/components";
 
-const flags = [
-	{
-		idioma: "English",
-		name: "flagpack:us",
-	},
-	{
-		idioma: "Français",
-		name: "flagpack:fr",
-	},
-	{
-		idioma: "Deutsch",
-		name: "flagpack:de",
-	},
-	{
-		idioma:"Italiano",
-		name: "flagpack:it",
-	},
-];
 ---
 
 <Layout title="Duolingo Clone ">
 	<!-- !Este es el contenido de la pagina  -->
-	
-
-		<div class="flex h-16 border-[gray-100] border-2 items-center justify-center mt-20 font-bold text-gray-500 w-full space-x-8">
-			{
-				flags.map((flag) => (
-
-					<a href="#" class="flex items-center ">
-						<Icon name={flag.name} size={35}/>
-						<span class="ml-3">{flag.idioma}</span>
-					</a>
-				))
-			}
-
-		</div>
 	
 </Layout>
