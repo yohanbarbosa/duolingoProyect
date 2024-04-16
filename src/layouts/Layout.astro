@@ -51,16 +51,16 @@ const flags  =[
 				<div class="relative group flex flex-row items-center hover:text-[#b9b7b7] text-[#AFAFAF] font-roboto font-semibold uppercase">
 					<a href="#" class="relative">Idioma de la Pagina: </a>
 					<Icon name="mdi:chevron-down" size={28} />
-					<div class="absolute top-8 right-1 hidden group-hover:block p-4 border-2 border-[#d8d8d8] w-96 rounded-lg bg-white">
+					<div class=" overflow-y-hidden absolute top-8 right-1 hidden group-hover:block p-4 border-2 border-[#d8d8d8] rounded-[15px] bg-white">
 						
-						<div class="my-2">
+						<div class="py-[15px]">
 							
-							<ul class="grid grid-cols-2 gap-4 text-xs text-[#777]">
+							<ul class="w-96 grid grid-cols-2 gap-2 text-xs text-[#777]">
 								{
 									flags.map((flag)=> 
 										
 									<a href="#" class="flex items-center ml-6 hover:bg-slate-300 py-2 px-4 rounded-xl">
-										<Icon name={flag.name} size={25}/><span class="ml-4">{flag.lenguage}</span>
+										<Icon name={flag.name} size={24}/><span class="ml-4">{flag.lenguage}</span>
 									</a>
 									
 									)
@@ -86,20 +86,20 @@ const flags  =[
 				<div class=" hover:cursor-pointer hover:bg-[#7edd36]  mt-11 rounded-xl border-b-4 border-[#50b837] text-white  font-bold flex  justify-center  items-center w-80 h-12  bg-[#58cc02]">
 					EMPIEZA AHORA
 				</div>
-				<div class=" hover:cursor-pointer hover:bg-[#e0e0e0]  mt-3 rounded-xl  border-[#d4d4d4] border-2 border-b-4  text-[#1CB0F6]  font-bold flex  justify-center  items-center w-80 h-12 ">
+				<div class=" hover:cursor-pointer hover:bg-[#e0e0e0]  mt-3 rounded-xl  border-[#E5E5E5] border-2 border-b-4  text-[#1CB0F6]  font-bold flex  justify-center  items-center w-80 h-12 ">
 					 YA TENGO UNA CUENTA 
 				</div>
 			</div>
 
 	  </div>
 
-	  <div class="h-20 border-b-[3px] border-t-[3px] border-[#E5E5E5] w-full flex ">
+	  <div class="h-20 border-b-[3px] border-t-[3px] border-[#E5E5E5] w-full flex mt-10">
 		
 		<nav class="flex items-center mx-auto">
 			<div class="text-[#AFAFAF] mr-3 cursor-pointer">
 				<Icon name="mdi:chevron-left" size={30} />
 			</div>
-			<div class=" space-x-10 flex">
+			<div class=" space-x-10 flex font-roboto">
 				<a href="#" class="items-center flex"><Icon name="flagpack:us" size={35}/><span class="ml-4 text-[#777] font-bold">INGLES</span></a>
 				<a href="#" class="items-center flex"><Icon name="flagpack:fr" size={35}/><span class="ml-4 text-[#777] font-bold">FRANCES</span></a>
 				<a href="#" class="items-center flex"><Icon name="flagpack:de" size={35}/><span class="ml-4 text-[#777] font-bold">ALEMAN</span></a>
@@ -193,14 +193,14 @@ const flags  =[
 			<h1 class="text-[#042C60] text-[64px] font-bold w-[583px] text-center">aprende cuando quieras y donde quieras</h1>
 
 			<div class="flex justify-center gap-7 mt-10">
-				<a href="#" class=" bg-slate-200 px-3 p-1 w-52 rounded-xl border-[#E5E5E5] border-4 flex items-center text-[#4B4B4B] font-bold"  >
+				<a href="#" class=" bg-slate-200 px-3 py-1 w-52 rounded-xl border-[#E5E5E5] border-4 flex items-center text-[#4B4B4B] font-bold"  >
 					<Icon name="mdi:apple" size={30}/>
 					<span class="flex flex-col ml-2" >
 						<span>Descargalo en la</span><span class="text-xl">App store</span> 
 					</span>
 				</a>
 
-				<a href="#" class=" bg-slate-200 px-3 p-1 w-52 rounded-xl border-[#E5E5E5] border-4 flex items-center text-[#4B4B4B] font-bold"  >
+				<a href="#" class=" bg-slate-200 px-3 py-1 w-52 rounded-xl border-[#E5E5E5] border-4 flex items-center text-[#4B4B4B] font-bold"  >
 					<Icon name="mdi:google-play" size={30}/>
 					<span class="flex flex-col ml-2" >
 						<span>Disponible en</span><span class="text-xl">Google play</span> 
@@ -209,7 +209,98 @@ const flags  =[
 			</div>
 		</div>
 	  </div>
-	  <div class="bg-[#100F3E] h-96"></div>
+
+
+
+	  <div class="bg-[#100F3E] h-[800px] flex items-center">
+
+		<div class="flex mx-auto gap-12 items-center ">
+
+			<div class="bg-[url('/pajaroAzul.png')] bg-center bg-[length:90%_90%] bg-no-repeat w-[530px] h-[530px] "></div>
+
+
+			<div class=" w-[610px] h-48 text-center">
+				<div class="">
+					<img src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/3a733db6d6873e1a915f70cf72554ce3.svg" alt="">
+				</div>
+
+				<button class="bg-white pt-2 px-4 pb-3 rounded-xl mt-10 border-b-4 border-[#aaa]">
+					<span class="text-[#100F3E] font-semibold font-roboto">RUEBA 2 MESES GRATIS</span>
+				</button>
+			</div>
+			
+		</div>
+	  </div>
+
+
+	  <div class="w-full flex mb-96 mt-10">
+		<div class=" mx-auto">
+			<div class="flex items-center gap-14">
+				<div class="">
+					<span class="text-[#58CC02] font-bold font-roboto text-[48px]">duolingo english test</span>
+					<p class="text-[#777] w-[420px] font-semibold" >
+						Nuestro examen de inglés es conveniente, rápido y económico. El Duolingo English Test integra los últimos avances en 
+						la ciencia e inteligencia artificial para dar a todas las personas la posibilidad de elegir dónde y cuándo hacer el 
+						examen y que puedan dar lo mejor de sí.
+					</p>
+					<a href="#" class="hover:cursor-pointer hover:bg-[#e0e0e0] font-roboto border-b-4 border-2 border-[#E5E5E5] rounded-xl p-3 w-[300px] inline-block mt-6 text-center text-[#1CB0F6] font-bold" >
+						CERTIFICA TU INGLES
+					</a>
+				</div>
+				<div class="bg-[url('https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/41a326f8a1a43ee68ef5ea35988fd87b.svg')] bg-center w-[530px] h-[530px] "></div>
+			</div>
+
+			<div class="flex items-center gap-14">
+				<div class="bg-[url('https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/9f63957bf97d10730813cbb715a0baa0.svg')] bg-center w-[530px] h-[530px] "></div>
+				
+				<div class="MT-10">
+					<span class="text-[#58CC02] font-bold font-roboto text-[48px]">duolingo for schools</span>
+					<p class="text-[#777] w-[420px] font-semibold" >
+						Maestras y maestros: ¡estamos para ayudarlos! Nuestra herramienta gratuita ayuda a tus
+						estudiantes a aprender idiomas a través de la app de Duolingo, tanto dentro como fuera del salón de clases.
+					</p>
+					<a href="#" class="hover:cursor-pointer hover:bg-[#e0e0e0] font-roboto border-b-4 border-2 border-[#E5E5E5] rounded-xl p-3 w-[300px] inline-block mt-6 text-center text-[#1CB0F6] font-bold" >
+						POTENCIA TU SALON DE CLASES
+					</a>
+				</div>
+			</div>
+
+			<div class="flex items-center gap-14">
+				
+				<div class="MT-10">
+					<span class="text-[#58CC02] font-bold font-roboto text-[48px]">duolingo abc</span>
+					<p class="text-[#777] w-[420px] font-semibold" >
+						¡Desde aprender idiomas hasta alfabetismo! Con lecciones de fonética
+						 y cuentos divertidos, Duolingo ABC enseña a niños y niñas de entre 3 y 8 
+						 años a leer y escribir… ¡y es totalmente gratis!
+					</p>
+					<a href="#" class="hover:cursor-pointer hover:bg-[#e0e0e0] font-roboto border-b-4 border-2 border-[#E5E5E5] rounded-xl p-3 w-[300px] inline-block mt-6 text-center text-[#1CB0F6] font-bold" >
+						CONOCE DUOLINGO ABC
+					</a>
+				</div>
+				<div class="bg-[url('https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/268877aef1bcca8a53f24b746483346c.svg')] bg-center w-[530px] h-[530px] "></div>
+			</div>
+			
+
+			<div class="flex items-center gap-14">
+				<div class="bg-[url('https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/1dacb3e2a288440001755c6a30e5ec60.svg')] bg-center w-[530px] h-[530px] "></div>
+				
+				<div class="MT-10">
+					<span class="text-[#58CC02] font-bold font-roboto text-[48px]">duolingo math</span>
+					<p class="text-[#777] w-[420px] font-semibold" >
+						¡Prueba nuestras lecciones cortas y gratis para matemáticas! Con Duolingo Math,
+						 los estudiantes podrán adelantarse en sus clases de matemáticas y los adultos
+						  podrán practicar para mejorar su destreza matemática.
+					</p>
+					<a href="#" class="hover:cursor-pointer hover:bg-[#e0e0e0] font-roboto border-b-4 border-2 border-[#E5E5E5] rounded-xl p-3 w-[300px] inline-block mt-6 text-center text-[#1CB0F6] font-bold" >
+						MEJORA EN MATEMATICA
+					</a>
+				</div>
+			</div>
+
+
+		</div>
+	  </div>
 	</body>
 </html>
 
